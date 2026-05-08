@@ -26,7 +26,7 @@ jobs:
       wren-langchain--tag_name: ${{ steps.release.outputs['sdk/wren-langchain--tag_name'] }}
       wren-langchain--version: ${{ steps.release.outputs['sdk/wren-langchain--version'] }}
     steps:
-      - uses: googleapis/release-please-action@v4
+      - uses: googleapis/release-please-action@v5
         id: release
         with:
           config-file: release-please-config.json
